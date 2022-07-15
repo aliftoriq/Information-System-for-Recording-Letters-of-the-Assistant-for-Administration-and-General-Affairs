@@ -49,7 +49,7 @@
                     <form action="/agenda-surat-masuk/{{$surat->getKey()}}" method="POST">
                         @csrf
                         @method('delete')
-                        <button type="submit" class="badge bg-danger"
+                        <button style="border:none;" type="submit" class="badge bg-danger"
                             onclick="return confirm('yakin ingin menghapus data ini?')">hapus</button>
                     </form>
                     {{-- <form action="/agenda-surat-masuk/{{$surat->getKey()}}/edit" method="POST" class="form-group ">
@@ -58,7 +58,8 @@
                         <input type="hidden" name="_method" value="PUT">
                         <button class="badge bg-primary" type="submit">Edit</button>
                     </form> --}}
-                    <a href="/agenda-surat-masuk/{{$surat->getKey()}}/edit"><button class="badge bg-primary" type="submit">Edit</button></a>
+                    <a href="/agenda-surat-masuk/{{$surat->getKey()}}/edit"><span class="badge bg-primary"
+                            type="submit">Edit</span></a>
                 </th>
 
                 @php
@@ -117,11 +118,14 @@
     @enderror
 
     @if(session()->has('deleted'))
-    <div class="alert alert-succes" role="alert">
-
-        {{session('deleted')}}
-    </div>
+    <div class="alert alert-success" role="alert">{{session('deleted');}}</div>
     @endif
+
+    @if(session()->has('updated'))
+    <div class="alert alert-success" role="alert">{{session('updated');}}</div>
+
+    @endif
+
 
 
     <button type="submit" class="btn btn-dark">masukan</button>

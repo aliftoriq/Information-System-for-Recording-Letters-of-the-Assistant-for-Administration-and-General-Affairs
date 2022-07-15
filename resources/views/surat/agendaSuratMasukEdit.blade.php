@@ -3,13 +3,28 @@
 @section('container')
 
 <div class="container mt-10">
-
+{{--
+    @php
+        dd($surat);
+    @endphp --}}
 
     <form action="/agenda-surat-masuk/{{$surat->getKey()}}" method="POST" class="form-group ">
         @csrf
         @method('put')
        <br><br>
-        <table class="mt-10">
+        <table class="mt-10 table">
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Tanggal</th>
+                    <th scope="col">No Arsip</th>
+                    <th scope="col">No Surat</th>
+                    <th scope="col">Instansi</th>
+                    <th scope="col">Hal</th>
+                    <th scope="col">Tindakan</th>
+
+                </tr>
+            </thead>
             <tbody>
 
                 <tr>

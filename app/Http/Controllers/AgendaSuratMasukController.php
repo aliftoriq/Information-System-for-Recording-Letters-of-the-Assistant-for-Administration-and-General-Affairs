@@ -79,10 +79,10 @@ class AgendaSuratMasukController extends Controller
      * @param  \App\Models\surat  $surat
      * @return \Illuminate\Http\Response
      */
-    public function edit(surat $surat)
+    public function edit(surat $agenda_surat_masuk)
     {
         return view('surat.agendaSuratMasukEdit', [
-            'surat' => $surat,
+            'surat' => $agenda_surat_masuk,
             'title' => 'Edit'
         ]);
     }
@@ -94,7 +94,7 @@ class AgendaSuratMasukController extends Controller
      * @param  \App\Models\surat  $surat
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, surat $surat)
+    public function update(Request $request, surat $agenda_surat_masuk)
     {
         $validatedData = $request->validate([
             'tanggal' => 'date|required',
@@ -104,7 +104,8 @@ class AgendaSuratMasukController extends Controller
             'hal' => 'required'
         ]);
 
-        surat::where('id',$surat->getKey())->update($validatedData);
+        surat::where('id', $agenda_surat_masuk->getKey())->update($validatedData);
+        return redirect("/agenda-surat-masuk")->with('updated', 'Data Terupdate');
     }
 
     /**
