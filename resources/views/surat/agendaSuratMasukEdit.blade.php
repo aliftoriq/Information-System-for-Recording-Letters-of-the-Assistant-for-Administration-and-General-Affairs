@@ -21,12 +21,9 @@
                     <th scope="col">No Surat</th>
                     <th scope="col">Instansi</th>
                     <th scope="col">Hal</th>
-                    <th scope="col">Tindakan</th>
-
                 </tr>
             </thead>
             <tbody>
-
                 <tr>
                     <th scope="row"> <br></th>
                     <th scope="row">
@@ -44,8 +41,6 @@
                             class="form-control  @error('no_surat') is-invalid @enderror" placeholder="no surat"
                             value="{{old('no_surat', $surat->no_surat)}}">
                     </th>
-
-
                     <th scope="row">
                         <input type="input" name="instansi" id="instansi"
                             class="form-control @error('instansi') is-invalid @enderror" placeholder="instansi"
@@ -55,11 +50,6 @@
                         <input type="input" name="hal" id="hal" class="form-control @error('hal') is-invalid @enderror"
                             placeholder="Hal" value="{{old('hal', $surat->hal)}}">
                     </th>
-                    <th scope="row">
-
-                    </th>
-
-
                 </tr>
 
             </tbody>

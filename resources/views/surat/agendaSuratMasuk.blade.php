@@ -28,6 +28,8 @@
             @php
             $no = 1;
 
+            $noArsip = 0;
+
             // dd($surats);
             @endphp
 
@@ -83,7 +85,7 @@
                     <th scope="row">
                         <input type="input" name="no_arsip" id="no_arsip"
                             class="form-control @error('no_arsip') is-invalid @enderror" placeholder="no arsip"
-                            @if($noArsip !=0) value={{$noArsip}} @endif>
+                            @if($noArsip !=0) value={{old('no_arsip',$noArsip)}} @endif>
                     </th>
                     <th scope="row">
                         <input type="input" name="no_surat" id="no_surat"
