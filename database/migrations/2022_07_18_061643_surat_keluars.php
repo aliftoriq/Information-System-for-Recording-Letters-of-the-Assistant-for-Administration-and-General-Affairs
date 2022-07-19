@@ -13,9 +13,16 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('suratKeluar', function (Blueprint $table) {
+        Schema::create('surat_keluars', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->date('tanggal');
+            $table->string('no_arsip');
+            $table->string('no_surat');
+            $table->string('instansi');
+            $table->string('hal');
+            $table->string('surat_masuk_id');
+            $table->rememberToken();
         });
     }
 

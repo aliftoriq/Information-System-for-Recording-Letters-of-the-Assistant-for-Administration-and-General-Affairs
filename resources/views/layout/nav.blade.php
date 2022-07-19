@@ -18,7 +18,7 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="/agenda-surat-masuk">Surat Agenda Masuk</a></li>
-                <li><a class="dropdown-item" href="#">Surat keluar</a></li>
+                <li><a class="dropdown-item" href="/surat-keluar">Surat keluar</a></li>
                 <li><a class="dropdown-item" href="#">Surat Tugas Masuk</a></li>
                 <li><a class="dropdown-item" href="#">Surat Sekda Keluar</a></li>
                 <li><a class="dropdown-item" href="#">Surat BKD Masuk</a></li>

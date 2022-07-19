@@ -47,12 +47,6 @@ class AgendaSuratMasukController extends Controller
             'hal' => 'required'
         ]);
 
-        // if($validatedData == null){
-        //     $request->session()->flash('nosurat', 'Nomor Surat Tersebut Sudah Ada');
-        //     return redirect('/agenda-surat-masuk');
-        // };
-
-
         surat::create($validatedData);
 
         $request->session()->flash('succes', 'Data berhasil ditambahnkan');
@@ -81,7 +75,7 @@ class AgendaSuratMasukController extends Controller
      */
     public function edit(surat $agenda_surat_masuk)
     {
-        return view('surat.agendaSuratMasukEdit', [
+        return view('surat.edit.agendaSuratMasukEdit', [
             'surat' => $agenda_surat_masuk,
             'title' => 'Edit'
         ]);

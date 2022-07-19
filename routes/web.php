@@ -4,6 +4,7 @@
 
 use App\Http\Controllers\AgendaSuratMasukController;
 use App\Http\Controllers\SuratController;
+use App\Http\Controllers\SuratKeluarController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,6 +25,8 @@ Route::get('/', function () {
 });
 
 Route::resource('/agenda-surat-masuk', AgendaSuratMasukController::class);
+
+Route::resource('/surat-keluar', SuratKeluarController::class);
 
 // Route::resource('/agenda-surat-masuk/{{$surat->id}}', AgendaSuratMasukController::class);
 
