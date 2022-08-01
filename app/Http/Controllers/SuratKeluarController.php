@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\sekda;
 use App\Models\surat;
+use App\Models\instansi;
 use App\Models\suratKeluar;
+use App\Models\suratTugas;
 use Illuminate\Http\Request;
 
 class SuratKeluarController extends Controller
@@ -16,8 +19,9 @@ class SuratKeluarController extends Controller
     public function index()
     {
         return view('surat.suratKeluar', [
-            'surats' => surat::doesntHave('surat_keluars')->get(),
+            'surats' => sekda::doesntHave('suratKeluars')->get(),
             'suratKeluars' => suratKeluar::all(),
+            'isntansi' => instansi::all(),
             'title' => 'Surat Keluar'
         ]);
     }
@@ -40,14 +44,14 @@ class SuratKeluarController extends Controller
      */
     public function store(Request $request)
     {
-        $surat = surat::findOrFail($request->get('id'));
+        $surat = sekda::findOrFail($request->get('id'));
 
         //    $surat = ['surat_masuk_id' => $request->id];
         $surat = [
             'tanggal' => $surat->tanggal,
             'no_arsip' => $surat->no_arsip,
             'no_surat' => $surat->no_surat,
-            'instansi' => $surat->instansi,
+            'instansi_id' => $surat->instansi->id,
             'hal' => $surat->hal,
             'surat_masuk_id' => $surat->id
         ];
@@ -94,7 +98,7 @@ class SuratKeluarController extends Controller
             'tanggal' => 'date|required',
             'no_arsip' => 'required',
             'no_surat' => 'required',
-            'instansi' => 'required',
+            'instansi_id' => 'required',
             'hal' => 'required'
         ]);
 

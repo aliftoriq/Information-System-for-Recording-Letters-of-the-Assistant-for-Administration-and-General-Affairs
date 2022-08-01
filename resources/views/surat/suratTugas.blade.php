@@ -1,14 +1,7 @@
 @extends('layout.body')
 
 @section('container')
-
-<div class="container mt-10">
-
-
-
-
-
-    @csrf
+<div class="container">
     <table class="table  mt-5">
         {{-- table-dark --}}
         <thead>
@@ -16,39 +9,33 @@
                 <th scope="col">No</th>
                 <th scope="col">Tanggal</th>
                 <th scope="col">No Arsip</th>
-                <th scope="col">No Surat</th>
                 <th scope="col">Instansi</th>
-                <th scope="col">Hal</th>
+                <th scope="col">Nama</th>
+                <th scope="col">Lama Perjalanan</th>
+                <th scope="col">Tujuan</th>
                 <th scope="col">Tindakan</th>
 
             </tr>
         </thead>
         <tbody>
-
             @php
             $no = 1;
-
-            $noArsip = 0;
-
-            // dd($surats);
             @endphp
-
-
-
-            @foreach($surats as $surat)
+            @foreach($suratTugas as $surat)
             <tr>
                 @php
                 // dd($surat->id)
                 @endphp
 
-                <th scope="row">{{$no}}</th>
+                <th scope="row">{{$loop->iteration}}</th>
                 <th scope="row">{{$surat->tanggal}}</th>
                 <th scope="row">{{$surat->no_arsip}}</th>
-                <th scope="row">{{$surat->no_surat}}</th>
                 <th scope="row">{{$surat->instansi->nama}}</th>
-                <th scope="row">{{$surat->hal}}</th>
+                <th scope="row">{{$surat->nama}}</th>
+                <th scope="row">{{$surat->lama}}</th>
+                <th scope="row">{{$surat->tujuan}}</th>
                 <th scope="row">
-                    <form action="/agenda-surat-masuk/{{$surat->getKey()}}" method="POST">
+                    <form action="/surat-tugas/{{$surat->getKey()}}" method="POST">
                         @csrf
                         @method('delete')
                         <button style="border:none;" type="submit" class="badge bg-danger"
@@ -60,19 +47,17 @@
                         <input type="hidden" name="_method" value="PUT">
                         <button class="badge bg-primary" type="submit">Edit</button>
                     </form> --}}
-                    <a href="/agenda-surat-masuk/{{$surat->getKey()}}/edit"><span class="badge bg-primary"
+                    <a href="/surat-tugas/{{$surat->getKey()}}/edit"><span class="badge bg-primary"
                             type="submit">Edit</span></a>
                 </th>
 
-                @php
-                $no = $no + 1;
-
-                $noArsip = $surat->no_arsip + 1;
-                @endphp
             </tr>
+            @php
+            $no = $loop->iteration + 1;
+            @endphp
             @endforeach
 
-            <form action="/agenda-surat-masuk" method="POST" class="form-group ">
+            <form action="/surat-tugas" method="POST" class="form-group ">
                 @csrf
 
                 <tr>
@@ -85,33 +70,36 @@
                     <th scope="row">
                         <input type="input" name="no_arsip" id="no_arsip"
                             class="form-control @error('no_arsip') is-invalid @enderror" placeholder="no arsip"
-                            @if($noArsip !=0) value={{old('no_arsip', $noArsip)}} @endif>
+                            value={{old('no_arsip' )}}>
                     </th>
-                    <th scope="row">
-                        <input type="input" name="no_surat" id="no_surat"
-                            class="form-control  @error('no_surat') is-invalid @enderror" placeholder="no surat"
-                            value="{{old('no_surat')}}">
-                    </th>
-
 
                     <th scope="row">
                         <select type="select" name="instansi_id" id="instansi_id"
-                        class="form-select @error('instansi_id') is-invalid @enderror"
-                        value="{{old('instansi')}}">
-                        @foreach($instansi as $ins)
+                            class="form-select @error('instansi_id') is-invalid @enderror" value="{{old('instansi')}}">
+                            @foreach($instansi as $ins)
                             <option value="{{$ins->getKey()}}">{{$ins->nama}}</option>
-                        @endforeach
-                    </select>
+                            @endforeach
+                        </select>
+                    </th>
+
+                    <th scope="row">
+                        <input type="input" name="nama" id="nama"
+                            class="form-control @error('nama') is-invalid @enderror" placeholder="nama"
+                            value="{{old('nama')}}">
+                    </th>
+
+                    <th scope="row">
+                        <input type="input" name="lama" id="lama"
+                            class="form-control @error('lama') is-invalid @enderror" placeholder="lama perjalanan"
+                            value="{{old('lama')}}">
                     </th>
                     <th scope="row">
-                        <input type="input" name="hal" id="hal" class="form-control @error('hal') is-invalid @enderror"
-                            placeholder="Hal" value="{{old('hal')}}">
+                        <input type="input" name="tujuan" id="tujuan"
+                            class="form-control @error('tujuan') is-invalid @enderror" placeholder="Tujuan"
+                            value="{{old('tujuan')}}">
                     </th>
                     <th scope="row">
-
                     </th>
-
-
                 </tr>
 
         </tbody>
@@ -135,10 +123,8 @@
 
 
     <button type="submit" class="btn btn-dark">masukan</button>
-    <a href="/instansi"><span class="badge bg-primary"
-        type="submit">Tambah Instansi</span></a>
+    <a href="/instansi"><span class="badge bg-primary" type="submit">Tambah Instansi</span></a>
     </form>
 </div>
 
-</div>
 @endsection

@@ -26,7 +26,7 @@
                 <th scope="row">{{$suratKeluar->tanggal}}</th>
                 <th scope="row">{{$suratKeluar->no_arsip}}</th>
                 <th scope="row">{{$suratKeluar->no_surat}}</th>
-                <th scope="row">{{$suratKeluar->instansi}}</th>
+                <th scope="row">{{$suratKeluar->instansi->nama}}</th>
                 <th scope="row">{{$suratKeluar->hal}}</th>
                 <th scope="row">
                     <form action="/surat-keluar/{{$suratKeluar->getKey()}}" method="POST">
@@ -76,7 +76,7 @@
                     <th scope="row">{{$surat->tanggal}}</th>
                     <th scope="row">{{$surat->no_arsip}}</th>
                     <th scope="row">{{$surat->no_surat}}</th>
-                    <th scope="row">{{$surat->instansi}}</th>
+                    <th scope="row">{{$surat->instansi->nama}}</th>
                     <th scope="row">{{$surat->hal}}</th>
                     <th scope="row">
                         <form action="/surat-keluar" method="POST">
@@ -97,5 +97,6 @@
 
             </tbody>
         </table>
+
 </div>
 @endsection

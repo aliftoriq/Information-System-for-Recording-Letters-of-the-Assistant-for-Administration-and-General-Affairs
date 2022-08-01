@@ -3,8 +3,12 @@
 // use App\Models\agendaSuratMasuk;
 
 use App\Http\Controllers\AgendaSuratMasukController;
+use App\Http\Controllers\InstansiController;
+use App\Http\Controllers\SekdaController;
 use App\Http\Controllers\SuratController;
 use App\Http\Controllers\SuratKeluarController;
+use App\Http\Controllers\suratTugasController;
+use App\Http\Controllers\updateSuratKeluar;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,6 +31,16 @@ Route::get('/', function () {
 Route::resource('/agenda-surat-masuk', AgendaSuratMasukController::class);
 
 Route::resource('/surat-keluar', SuratKeluarController::class);
+
+Route::resource('/surat-keluar', SuratKeluarController::class);
+
+Route::resource('/surat-sekda', SekdaController::class);
+
+Route::resource('/instansi', InstansiController::class);
+
+Route::resource('/surat-tugas', suratTugasController::class);
+
+// Route::POST('/update', updateSuratKeluar::class);
 
 // Route::resource('/agenda-surat-masuk/{{$surat->id}}', AgendaSuratMasukController::class);
 

@@ -13,14 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('surats', function (Blueprint $table) {
+        Schema::create('surat_tugas', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
             $table->date('tanggal');
-            $table->string('no_arsip')->unique();
-            $table->string('no_surat')->unique();
+            $table->string('no_arsip');
             $table->string('instansi_id');
-            $table->string('hal');
+            $table->string('nama');
+            $table->string('tujuan');
+            $table->String('lama');
             $table->String('jenis_surat');
             $table->rememberToken();
         });
@@ -33,6 +34,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('surats');
+        Schema::dropIfExists('surat_tugas');
     }
 };

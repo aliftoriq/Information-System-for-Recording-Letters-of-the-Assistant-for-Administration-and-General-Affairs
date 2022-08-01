@@ -19,9 +19,10 @@ return new class extends Migration
             $table->date('tanggal');
             $table->string('no_arsip');
             $table->string('no_surat');
-            $table->string('instansi');
+            $table->string('instansi_id');
             $table->string('hal');
             $table->string('surat_masuk_id');
+            $table->boolean('status')->nullable();
             $table->rememberToken();
         });
     }

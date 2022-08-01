@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\instansi;
 use App\Models\surat;
 use Illuminate\Http\Request;
 
@@ -17,7 +18,8 @@ class AgendaSuratMasukController extends Controller
         // return surat::all();
         return view('surat.agendaSuratMasuk', [
             'surats' => surat::all(),
-            'title' => 'Agenda Surat Masuk'
+            'title' => 'Agenda Surat Masuk',
+            'instansi' => instansi::all()
         ]);
     }
 
@@ -43,9 +45,10 @@ class AgendaSuratMasukController extends Controller
             'tanggal' => 'date|required',
             'no_arsip' => 'required',
             'no_surat' => 'required|unique:surats,no_surat',
-            'instansi' => 'required',
-            'hal' => 'required'
+            'instansi_id' => 'required',
+            'hal' => 'required',
         ]);
+
 
         surat::create($validatedData);
 
@@ -77,7 +80,8 @@ class AgendaSuratMasukController extends Controller
     {
         return view('surat.edit.agendaSuratMasukEdit', [
             'surat' => $agenda_surat_masuk,
-            'title' => 'Edit'
+            'title' => 'Edit',
+            'instansi' => instansi::all()
         ]);
     }
 
@@ -94,9 +98,11 @@ class AgendaSuratMasukController extends Controller
             'tanggal' => 'date|required',
             'no_arsip' => 'required',
             'no_surat' => 'required',
-            'instansi' => 'required',
-            'hal' => 'required'
+            'instansi_id' => 'required',
+            'hal' => 'required',
+
         ]);
+
 
         surat::where('id', $agenda_surat_masuk->getKey())->update($validatedData);
         return redirect("/agenda-surat-masuk")->with('updated', 'Data Terupdate');

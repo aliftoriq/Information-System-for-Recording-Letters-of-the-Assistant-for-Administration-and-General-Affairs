@@ -2,23 +2,22 @@
 
 namespace App\Models;
 
-use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class suratKeluar extends Model
+class sekda extends Model
 {
     use HasFactory;
-    protected $guarded = [
 
-    ];
+    protected $guarded = [];
 
     public function instansi(){
         return $this->belongsTo(instansi::class);
-        // , 'instansi_id','id'
+        // , 'instansi_id','id'ph
     }
 
-
-
+    public function suratKeluars(){
+        return $this->hasMany(suratKeluar::class, 'surat_masuk_id','id');
+    }
 
 }

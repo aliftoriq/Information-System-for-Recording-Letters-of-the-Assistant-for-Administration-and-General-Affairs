@@ -3,15 +3,15 @@
 @section('container')
 
 <div class="container mt-10">
-{{--
+    {{--
     @php
-        dd($surat);
+    dd($surat);
     @endphp --}}
 
     <form action="/agenda-surat-masuk/{{$surat->getKey()}}" method="POST" class="form-group ">
         @csrf
         @method('put')
-       <br><br>
+        <br><br>
         <table class="mt-10 table">
             <thead>
                 <tr>
@@ -42,9 +42,14 @@
                             value="{{old('no_surat', $surat->no_surat)}}">
                     </th>
                     <th scope="row">
-                        <input type="input" name="instansi" id="instansi"
-                            class="form-control @error('instansi') is-invalid @enderror" placeholder="instansi"
-                            value="{{old('instansi',$surat->instansi)}}">
+                        <select type="select" name="instansi_id" id="instansi_id"
+                            class="form-select @error('instansi_id') is-invalid @enderror"
+                            value="{{old('instansi',$surat->instansi->nama)}}">
+                            @foreach($instansi as $ins)
+                                <option value="{{$ins->getKey()}}">{{$ins->nama}}</option>
+                            @endforeach
+                            <a href="/instansi"><option value="/instansi">tambah instansi</option></a>
+                        </select>
                     </th>
                     <th scope="row">
                         <input type="input" name="hal" id="hal" class="form-control @error('hal') is-invalid @enderror"

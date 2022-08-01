@@ -18,7 +18,6 @@ class surat extends Model
     //     'password',
     // ];
 
-    protected $guarded = [];
 
     public function suratKeluar()
     {
@@ -26,7 +25,15 @@ class surat extends Model
         return $c;
     }
 
-    public function surat_keluars(){
-        return $this->hasMany(suratKeluar::class, 'surat_masuk_id','id');
+    public function sekda(){
+        return $this->hasMany(sekda::class, 'surat_masuk_id','id');
     }
+
+
+    public function instansi(){
+        return $this->belongsTo(instansi::class);
+        // , 'instansi_id','id'
+    }
+
+    protected $guarded = [];
 }
