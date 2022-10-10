@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('no_surat');
             $table->string('instansi_id');
             $table->string('hal');
-            $table->string('surat_masuk_id');
+            $table->string('surat_sekda_id');
             $table->boolean('status')->nullable();
             $table->rememberToken();
         });

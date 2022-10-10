@@ -47,6 +47,7 @@ class AgendaSuratMasukController extends Controller
             'no_surat' => 'required|unique:surats,no_surat',
             'instansi_id' => 'required',
             'hal' => 'required',
+            // 'jenis_surat' => 'required'
         ]);
 
 

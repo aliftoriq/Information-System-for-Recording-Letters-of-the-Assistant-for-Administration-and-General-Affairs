@@ -53,7 +53,7 @@ class SuratKeluarController extends Controller
             'no_surat' => $surat->no_surat,
             'instansi_id' => $surat->instansi->id,
             'hal' => $surat->hal,
-            'surat_masuk_id' => $surat->id
+            'surat_sekda_id' => $surat->id
         ];
 
         suratKeluar::create($surat);

@@ -17,7 +17,8 @@ class sekda extends Model
     }
 
     public function suratKeluars(){
-        return $this->hasMany(suratKeluar::class, 'surat_masuk_id','id');
+        return $this->hasMany(suratKeluar::class, 'surat_sekda_id','id');
+        // return $this->hasMany(suratKeluar::class, 'surat_masuk_id','id');
     }
 
 }

@@ -20,12 +20,13 @@ class SekdaController extends Controller
     {
         return view('surat.sekda', [
             'surats' => surat::doesntHave('sekda')->get(),
-            'sekdas' => sekda::where('status', '1')->get(),
-            'sekdaFalse'=> sekda::where('status', '0')->get(),
+            'sekdas' => sekda::all(),
             'suratTugas' => suratTugas::doesntHave('sekda')->get(),
             'instansi' => instansi::all(),
-            'title' => 'Sekertaris Daerah'
+            'title' => 'Sekertaris Daerah',
+
         ]);
+        // 'sekdaFalse'=> sekda::where('status', '0')->get(),
     }
 
     /**
@@ -57,7 +58,8 @@ class SekdaController extends Controller
                 'instansi_id' => $surat->instansi->id,
                 'hal' => $surat->hal,
                 'status' => false,
-                'surat_masuk_id' => $surat->id
+                'surat_masuk_id' => $surat->id,
+                'jenis_surat' => $request->jenis_surat
             ];
             sekda::create($surat);
         }
@@ -72,7 +74,8 @@ class SekdaController extends Controller
                 'instansi_id' => $surat->instansi->id,
                 'hal' => $surat->nama .' | '. $surat->tujuan. ' | Surat tugas',
                 'status' => false,
-                'surat_masuk_id' => $surat->id
+                'surat_tugas_id' => $surat->id,
+                'jenis_surat' => $request->jenis_surat
             ];
             sekda::create($surat);
         }

@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('hal');
             $table->date('tanggal_diterima');
             $table->String('surat_masuk_id');
+            $table->String('surat_tugas_id');
             $table->String('jenis_surat');
             $table->string('nama_penerima');
             $table->boolean('status')->nullable();

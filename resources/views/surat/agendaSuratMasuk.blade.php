@@ -108,7 +108,7 @@
                             placeholder="Hal" value="{{old('hal')}}">
                     </th>
                     <th scope="row">
-
+                        <input type="input" hidden name="jenis_surat" id="jenis_surat" value="1">
                     </th>
 
 

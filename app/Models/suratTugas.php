@@ -18,7 +18,7 @@ class suratTugas extends Model
     }
 
     public function sekda(){
-        return $this->hasMany(sekda::class, 'surat_masuk_id','id');
+        return $this->hasMany(sekda::class, 'surat_tugas_id','id');
     }
 
     protected $guarded = [];
