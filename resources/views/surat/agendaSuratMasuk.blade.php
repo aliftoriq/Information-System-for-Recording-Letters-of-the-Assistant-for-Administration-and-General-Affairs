@@ -44,7 +44,7 @@
                 <th scope="row">{{$surat->tanggal}}</th>
                 <th scope="row">{{$surat->no_arsip}}</th>
                 <th scope="row">{{$surat->no_surat}}</th>
-                <th scope="row">{{$surat->instansi_id}}</th>
+                <th scope="row">{{$surat->instansi->nama}}</th>
                 <th scope="row">{{$surat->hal}}</th>
                 <th scope="row">
                     <form action="/agenda-surat-masuk/{{$surat->getKey()}}" method="POST">
