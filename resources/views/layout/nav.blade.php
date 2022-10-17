@@ -1,9 +1,9 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid container">
-        <img class="" src="" alt="" style="width:30px">
-        <a class="navbar-brand" href="/dashboard/index.html">Pemerintah Provinsi
+        <img class="" src="assets/Coat_of_arms_of_South_Sumatra.svg" alt="" style="width:30px">
+        <a class="navbar-brand px-3" href="">Pemerintah Provinsi
             Sumatera Selatan</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
