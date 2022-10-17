@@ -23,7 +23,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home',[
+    return view('home', [
         'title' => 'Home'
     ]);
 });
@@ -43,6 +43,3 @@ Route::resource('/surat-tugas', suratTugasController::class);
 // Route::POST('/update', updateSuratKeluar::class);
 
 // Route::resource('/agenda-surat-masuk/{{$surat->id}}', AgendaSuratMasukController::class);
-
-
-

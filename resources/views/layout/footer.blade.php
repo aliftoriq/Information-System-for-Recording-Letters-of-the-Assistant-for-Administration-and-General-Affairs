@@ -44,8 +44,7 @@
             </div>
 
             <div class="col-lg-4 ms-auto">
-
-                <img class="logo2" src="/asset/Coat_of_arms_of_South_Sumatra.svg" alt="">
+                <img class="logo2" src="assets/Coat_of_arms_of_South_Sumatra.svg" style="width: 40px" alt="">
                 <h5 class="text-uppercase">Pemerintah Provinsi Sumatera Selatan</h5>
                 <p>Permudah Pencatatan Surat</p>
 

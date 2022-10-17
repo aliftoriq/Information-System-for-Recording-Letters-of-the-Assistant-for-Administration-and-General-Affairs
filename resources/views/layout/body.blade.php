@@ -12,6 +12,16 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <title>Web | {{$title}}</title>
+
+    <style>
+    #gambarC {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        max-height: 450px;
+        margin-bottom: 1rem;
+    }
+    </style>
 </head>
 
 <body>
