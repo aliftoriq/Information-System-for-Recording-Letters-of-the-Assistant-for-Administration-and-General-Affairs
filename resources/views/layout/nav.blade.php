@@ -21,9 +21,9 @@
                 <li><a class="dropdown-item" href="/surat-keluar">Surat keluar</a></li>
                 <li><a class="dropdown-item" href="/surat-tugas">Surat Tugas Masuk</a></li>
                 <li><a class="dropdown-item" href="/surat-sekda">Surat Sekda Keluar</a></li>
-                <li><a class="dropdown-item" href="/surat-masuk-bkd">Surat BKD Masuk</a></li>
+                {{-- <li><a class="dropdown-item" href="/surat-masuk-bkd">Surat BKD Masuk</a></li>
                 <li><a class="dropdown-item" href="surat-masuk-bkd-iii">Surat BKD III Masuk</a></li>
-                <li><a class="dropdown-item" href="/surat-keluar-bkd">Surat BKD Keluar</a></li>
+                <li><a class="dropdown-item" href="/surat-keluar-bkd">Surat BKD Keluar</a></li> --}}
               </ul>
             </li>
           </ul>

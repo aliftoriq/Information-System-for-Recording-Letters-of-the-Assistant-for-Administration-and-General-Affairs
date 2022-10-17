@@ -50,7 +50,6 @@ class AgendaSuratMasukController extends Controller
             // 'jenis_surat' => 'required'
         ]);
 
-
         surat::create($validatedData);
 
         $request->session()->flash('succes', 'Data berhasil ditambahnkan');
