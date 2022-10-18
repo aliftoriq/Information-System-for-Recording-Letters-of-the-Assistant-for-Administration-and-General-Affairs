@@ -40,7 +40,7 @@
     <div class="row mt-4">
         <div class="d-flex justify-content-center">
             <div class="col-3">
-                <a href="/Surat masuk/index.html">
+                <a href="/agenda-surat-masuk">
                     <div class="card text-bg-dark m-3">
                         <div class="card-body">
                             <h5 class="card-title">Agenda Surat Masuk</h5>
@@ -49,7 +49,7 @@
                 </a>
             </div>
             <div class="col-3">
-                <a href="">
+                <a href="/surat-keluar">
                     <div class="card text-bg-dark m-3">
                         <div class="card-body">
                             <h5 class="card-title">Surat Keluar
@@ -59,19 +59,19 @@
                 </a>
             </div>
             <div class="col-3">
-                <a href="">
+                <a href="/surat-sekda">
                     <div class="card text-bg-dark m-3">
                         <div class="card-body">
-                            <h5 class="card-title">Sekretaris Daerah Surat Masuk</h5>
+                            <h5 class="card-title">Surat Sekertaris Daerah</h5>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="col-3">
-                <a href="">
+                <a href="/surat-tugas">
                     <div class="card text-bg-dark m-3">
                         <div class="card-body">
-                            <h5 class="card-title">Surat Sekda Keluar</h5>
+                            <h5 class="card-title">Surat Tugas</h5></h5>
                         </div>
                     </div>
                 </a>
@@ -81,36 +81,7 @@
     </div>
     <div class="row mt-4 mb-4">
         <div class="d-flex justify-content-center">
-            <div class="col-3">
-                <a href="">
-                    <div class="card text-bg-dark m-3">
-                        <div class="card-body">
-                            <h5 class="card-title">BKD I dan II Surat Masuk</h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-3">
-                <a href="">
-                    <div class="card text-bg-dark m-3">
-                        <div class="card-body">
-                            <h5 class="card-title">BKD III Surat Masuk</h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-3">
-                <a href="">
-                    <div class="card text-bg-dark m-3">
-                        <div class="card-body">
-                            <h5 class="card-title">BKD Surat Keluar</h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-3">
-                <button type="button" class="btn btn-dark btn-lg"><a href=""> Dark</a></button>
-            </div>
+
 
         </div>
     </div>

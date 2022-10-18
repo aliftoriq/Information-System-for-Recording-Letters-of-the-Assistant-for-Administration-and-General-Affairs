@@ -2,6 +2,7 @@
 
 @section('container')
 <div class="container">
+    <h1 class="text-center text-bold pt-10">Surat Sekertasis Daerah</h1>
     <table class="table  mt-5 mb-5">
         <thead>
             <tr>
@@ -152,4 +153,7 @@
                 </table>
             </div>
         </div>
-        @endsection
+    </div>
+</div>
+
+@endsection

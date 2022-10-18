@@ -5,7 +5,7 @@
 
 
 <div class="container mt-10">
-
+    <h1 class="text-center text-bold pt-10">Agenda Surat Masuk</h1>
 
     @csrf
     <table class="table  mt-5">
