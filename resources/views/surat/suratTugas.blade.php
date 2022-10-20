@@ -42,10 +42,10 @@
                             onclick="return confirm('yakin ingin menghapus data ini?')">hapus</button>
                     </form>
                     {{-- <form action="/agenda-surat-masuk/{{$surat->getKey()}}/edit" method="POST" class="form-group ">
-                        @csrf
-                        @method('PUT')
-                        <input type="hidden" name="_method" value="PUT">
-                        <button class="badge bg-primary" type="submit">Edit</button>
+                    @csrf
+                    @method('PUT')
+                    <input type="hidden" name="_method" value="PUT">
+                    <button class="badge bg-primary" type="submit">Edit</button>
                     </form> --}}
                     <a href="/surat-tugas/{{$surat->getKey()}}/edit"><span class="badge bg-primary"
                             type="submit">Edit</span></a>
@@ -120,10 +120,8 @@
 
     @endif
 
-
-
     <button type="submit" class="btn btn-dark">masukan</button>
-    <a href="/instansi"><span class="badge bg-primary" type="submit">Tambah Instansi</span></a>
+    <a href="/instansi"><span class="btn btn-primary" type="submit">Tambah Instansi</span></a>
     </form>
 </div>
 

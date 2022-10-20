@@ -46,9 +46,11 @@
                             class="form-select @error('instansi_id') is-invalid @enderror"
                             value="{{old('instansi',$surat->instansi->nama)}}">
                             @foreach($instansi as $ins)
-                                <option value="{{$ins->getKey()}}">{{$ins->nama}}</option>
+                            <option value="{{$ins->getKey()}}">{{$ins->nama}}</option>
                             @endforeach
-                            <a href="/instansi"><option value="/instansi">tambah instansi</option></a>
+                            <a href="/instansi">
+                                <option value="/instansi">tambah instansi</option>
+                            </a>
                         </select>
                     </th>
                     <th scope="row">

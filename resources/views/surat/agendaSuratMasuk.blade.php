@@ -5,7 +5,7 @@
 
 
 <div class="container mt-10">
-    <h1 class="text-center text-bold pt-10">Agenda Surat Masuk</h1>
+    <h1 class="text-center text-bold mt-3">Agenda Surat Masuk</h1>
 
     @csrf
     <table class="table  mt-5">
@@ -50,8 +50,9 @@
                     <form action="/agenda-surat-masuk/{{$surat->getKey()}}" method="POST">
                         @csrf
                         @method('delete')
-                        <button style="border:none;" type="submit" class="badge bg-danger"
-                            onclick="return confirm('yakin ingin menghapus data ini?')">hapus</button>
+                        <button style="border:none; width:60px;" type="submit" class="badge bg-danger"
+                            onclick="return confirm('yakin ingin menghapus data ini?')">
+                            hapus</button>
                     </form>
                     {{-- <form action="/agenda-surat-masuk/{{$surat->getKey()}}/edit" method="POST" class="form-group ">
                     @csrf
@@ -59,8 +60,8 @@
                     <input type="hidden" name="_method" value="PUT">
                     <button class="badge bg-primary" type="submit">Edit</button>
                     </form> --}}
-                    <a href="/agenda-surat-masuk/{{$surat->getKey()}}/edit"><span class="badge bg-primary"
-                            type="submit">Edit</span></a>
+                    <a href="/agenda-surat-masuk/{{$surat->getKey()}}/edit"><span class="badge bg-primary" type="submit"
+                            style="width:60px;">Edit</span></a>
                 </th>
 
                 @php
@@ -133,7 +134,9 @@
 
 
     <button type="submit" class="btn btn-dark">masukan</button>
-    <a href="/instansi"><span class="badge bg-primary" type="submit">Tambah Instansi</span></a>
+    <a href="/instansi"><span class="btn btn-primary"> Tambah Instansi</span></a>
+    <!-- <a href="/instansi" class="badge bg-primary" type="submit" style="height: 40px;">Tambah Instansi</a> -->
+
     </form>
 </div>
 
