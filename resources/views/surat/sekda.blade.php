@@ -30,11 +30,11 @@
                     <form action="/surat-sekda/{{$sekda->getKey()}}" method="POST">
                         @csrf
                         @method('delete')
-                        <button style="border:none;" type="submit" class="badge bg-danger"
+                        <button style="border:none; width: 80px" type="submit" class="badge bg-danger"
                             onclick="return confirm('yakin ingin menghapus data ini?')">hapus</button>
                     </form>
-                    <a href="/surat-sekda/{{$sekda->getKey()}}/edit"><span class="badge bg-primary"
-                            type="submit">Edit</span></a>
+                    <a href="/surat-sekda/{{$sekda->getKey()}}/edit"><span class="badge bg-primary" type="submit"
+                            style="width:80px;">Edit</span></a>
                 </th>
             </tr>
             @endforeach
@@ -82,10 +82,11 @@
                             {{-- @method('put') --}}
                             <input type="text" name="id" value="{{$surat->getKey()}}" hidden>
                             <input type="text" name="jenis_surat" value="1" hidden>
-                            <button style="border:none;" type="submit" class="badge bg-success">Tambahkan</button>
+                            <button style="border:none; widht:80px" type="submit"
+                                class="badge bg-success">Tambahkan</button>
                         </form>
                         <a href="/agenda-surat-masuk/{{$surat->getKey()}}/edit"><span class="badge bg-primary"
-                                type="submit">Edit</span></a>
+                                type="submit" style="width:80px;">Edit</span></a>
                     </th>
                     @php
                     $no = $no + 1;
@@ -136,11 +137,11 @@
                                     {{-- @method('put') --}}
                                     <input type="text" name="id" value="{{$surat->getKey()}}" hidden>
                                     <input type="text" name="jenis_surat" value="2" hidden>
-                                    <button style="border:none;" type="submit"
+                                    <button style="border:none; width:80px" type="submit"
                                         class="badge bg-success">Tambahkan</button>
                                 </form>
                                 <a href="/surat-sekda/{{$surat->getKey()}}/edit"><span class="badge bg-primary"
-                                        type="submit">Edit</span></a>
+                                        type="submit" style="width: 80px;">Edit</span></a>
                             </th>
                             @php
                             $no = $no + 1;
