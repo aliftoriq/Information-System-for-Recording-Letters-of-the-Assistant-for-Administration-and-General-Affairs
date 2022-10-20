@@ -81,14 +81,14 @@
  -->
 
                 <!-- ======= -->
-                <a href="/Surat masuk/index.html"><button type="button" class="btn btn-primary btn-lg btn-dark"
+                <a href="/agenda-surat-masuk"><button type="button" class="btn btn-primary btn-lg btn-dark"
                         style="height: 80px; width: 300px">
                         Agenda Surat Masuk
                     </button>
                 </a>
             </div>
             <div class="col-3">
-                <a href="/Surat masuk/index.html"><button type="button" class="btn btn-primary btn-lg btn-dark"
+                <a href="/surat-keluar"><button type="button" class="btn btn-primary btn-lg btn-dark"
                         style="height: 80px; width: 300px">
                         Surat Keluar
                     </button>
@@ -96,13 +96,13 @@
 
             </div>
             <div class="col-3">
-                <a href="/Surat masuk/index.html"><button type="button" class="btn btn-primary btn-lg btn-dark" style="height: 80px; width: 300px">
+                <a href="/surat-tugas"><button type="button" class="btn btn-primary btn-lg btn-dark" style="height: 80px; width: 300px">
                     Surat Tugas Masuk
                 </button>
             </a>
             </div>
             <div class="col-3">
-                <a href="/Surat masuk/index.html"><button type="button" class="btn btn-primary btn-lg btn-dark" style="height: 80px; width: 300px">
+                <a href="/surat-sekda"><button type="button" class="btn btn-primary btn-lg btn-dark" style="height: 80px; width: 300px">
                     Surat Sekda Keluar
                 </button>
             </a>
