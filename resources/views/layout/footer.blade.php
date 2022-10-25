@@ -48,13 +48,13 @@
             </div> -->
 
             <div class="col-6 ms-auto">
-                <div class="mx-4">
-                    <img class="" src="assets/Coat_of_arms_of_South_Sumatra.svg" style="float:left; width: 80px;"
+                <div class="mx-4 px-3">
+                    <img class="px-1" src="assets/Coat_of_arms_of_South_Sumatra.svg" style="float:left; width: 80px;"
                         alt="">
                 </div>
-                <div>
-                    <h5 class="text-uppercase px-4">Pemerintah Provinsi Sumatera Selatan</h5>
-                    <p>Permudah Pencatatan Surat</p>
+                <div class="px-3">
+                    <h5 class="text-uppercase px-3">Pemerintah Provinsi Sumatera Selatan</h5>
+                    <p class="px-3">Permudah Pencatatan Surat</p>
                 </div>
 
 
@@ -67,7 +67,7 @@
 
 
     <div class="footer text-center p-3 ">
-        © 2022 Copyright:<a class="text-white text-decoration-none" href="#">Pemerintah Provinsi Sumatera Selatan</a>
+        © 2022 Copyright:<a class="text-white text-decoration-none" href="/">Pemerintah Provinsi Sumatera Selatan</a>
     </div>
 
 </footer>

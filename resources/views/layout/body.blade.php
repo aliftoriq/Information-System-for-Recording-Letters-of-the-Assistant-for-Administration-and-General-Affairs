@@ -15,13 +15,15 @@
     <title>Web | {{$title}}</title>
 
     <style>
-    #gambarC {
-        object-fit: cover;
-        object-position: center;
-        width: 100%;
-        max-height: 450px;
-        margin-bottom: 1rem;
-    }
+        #gambarC {
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            max-height: 450px;
+            margin-bottom: 1rem;
+        }
+
+
     </style>
 </head>
 

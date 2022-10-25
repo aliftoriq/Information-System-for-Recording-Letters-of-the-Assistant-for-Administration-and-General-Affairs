@@ -80,22 +80,22 @@
                     <th scope="row">
                         <input type="date" name="tanggal" id="tanggal"
                             class="form-control @error('tanggal') is-invalid @enderror" placeholder="no arsip"
-                            value="{{old('tanggal')}}">
+                            value="{{old('tanggal')}}" required>
                     </th>
                     <th scope="row">
                         <input type="input" name="no_arsip" id="no_arsip"
                             class="form-control @error('no_arsip') is-invalid @enderror" placeholder="no arsip"
-                            @if($noArsip !=0) value={{old('no_arsip', $noArsip)}} @endif>
+                            @if($noArsip !=0) value={{old('no_arsip', $noArsip)}} @endif required>
                     </th>
                     <th scope="row">
                         <input type="input" name="no_surat" id="no_surat"
                             class="form-control  @error('no_surat') is-invalid @enderror" placeholder="no surat"
-                            value="{{old('no_surat')}}">
+                            value="{{old('no_surat')}}" required>
                     </th>
 
 
                     <th scope="row">
-                        <select type="select" name="instansi_id" id="instansi_id"
+                        <select type="select" name="instansi_id" id="instansi_id" required
                             class="form-select @error('instansi_id') is-invalid @enderror" value="{{old('instansi')}}">
                             @foreach($instansi as $ins)
                             <option value="{{$ins->getKey()}}">{{$ins->nama}}</option>
@@ -104,7 +104,7 @@
                     </th>
                     <th scope="row">
                         <input type="input" name="hal" id="hal" class="form-control @error('hal') is-invalid @enderror"
-                            placeholder="Hal" value="{{old('hal')}}">
+                            placeholder="Hal" value="{{old('hal')}}" required>
                     </th>
                     <th scope="row">
                         <input type="input" hidden name="jenis_surat" id="jenis_surat" value="1">
