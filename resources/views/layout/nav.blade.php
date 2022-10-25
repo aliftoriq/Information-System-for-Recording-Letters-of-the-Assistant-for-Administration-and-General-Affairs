@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container-fluid container">
         <img class="" src="assets/Coat_of_arms_of_South_Sumatra.svg" alt="" style="width:30px">
         <a class="navbar-brand px-3" href="/">Pemerintah Provinsi
@@ -23,9 +23,9 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li><a class="dropdown-item" href="/agenda-surat-masuk">Surat Agenda Masuk</a></li>
-                        <li><a class="dropdown-item" href="/surat-keluar">Surat keluar</a></li>
                         <li><a class="dropdown-item" href="/surat-tugas">Surat Tugas Masuk</a></li>
                         <li><a class="dropdown-item" href="/surat-sekda">Surat Sekda Keluar</a></li>
+                        <li><a class="dropdown-item" href="/surat-keluar">Surat keluar</a></li>
                     </ul>
                 </li>
             </ul>
