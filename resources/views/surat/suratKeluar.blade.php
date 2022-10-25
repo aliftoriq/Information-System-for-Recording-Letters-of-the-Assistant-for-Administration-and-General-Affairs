@@ -40,10 +40,11 @@
                     <form action="/surat-keluar/{{$suratKeluar->getKey()}}" method="POST">
                         @csrf
                         @method('delete')
-                        <button style="border:none;" type="submit" class="badge bg-danger"
-                            onclick="return confirm('yakin ingin menghapus data ini?')">hapus</button>
+                        <button style="border:none; width:60px;" type="submit" class="badge bg-danger"
+                            onclick="return confirm('yakin ingin menghapus data ini?')">
+                            hapus</button>
                     </form>
-                    <a href="/surat-keluar/{{$suratKeluar->getKey()}}/edit"><span class="badge bg-primary"
+                    <a href="/surat-keluar/{{$suratKeluar->getKey()}}/edit"><span style="width: 60px" class="badge bg-primary"
                             type="submit">Edit</span></a>
                 </th>
                 @php

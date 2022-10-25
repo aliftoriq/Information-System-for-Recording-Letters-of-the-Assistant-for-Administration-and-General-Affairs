@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid container">
         <img class="" src="assets/Coat_of_arms_of_South_Sumatra.svg" alt="" style="width:30px">
-        <a class="navbar-brand px-3" href="">Pemerintah Provinsi
+        <a class="navbar-brand px-3" href="/">Pemerintah Provinsi
             Sumatera Selatan</a>
         <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,13 +11,13 @@
 
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    <a class="nav-link @if($title == "Home") active @endif" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/About">About</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    <a class="nav-link dropdown-toggle @if($title != "Home" && $title != "About") active @endif" href="#" id="navbarDropdownMenuLink" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Surat Masuk-Keluar
                     </a>
