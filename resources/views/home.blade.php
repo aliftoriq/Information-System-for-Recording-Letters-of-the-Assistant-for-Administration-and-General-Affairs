@@ -35,7 +35,108 @@
         </div>
 
         <div class="alur-surat">
+            <div class="container">
+                <div class="row text-center justify-content-center mb-5">
+                    <div class="col-xl-6 col-lg-8">
+                        <h3 class="font-weight-bold">Alur Agenda Surat Masuk</h3>
+                    </div>
+                </div>
 
+                <div class="row">
+                    <div class="col">
+                        <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
+                            <div class="timeline-step">
+                                <div class="timeline-content" data-toggle="popover" data-trigger="hover"
+                                    data-placement="top" title=""
+                                    data-content="And here's some amazing content. It's very engaging. Right?"
+                                    data-original-title="2003">
+                                    <div class="inner-circle"></div>
+                                    <p class="h6 mt-3 mb-1">Agenda Surat masuk</p>
+                                    {{-- <p class="h6 text-muted mb-0 mb-lg-0">Seluruh Surat Masuk Kecuali Surat tugas
+                                    </p> --}}
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="timeline-content" data-toggle="popover" data-trigger="hover"
+                                    data-placement="top" title=""
+                                    data-content="And here's some amazing content. It's very engaging. Right?"
+                                    data-original-title="2004">
+                                    <div class="inner-circle"></div>
+                                    <p class="h6 mt-3 mb-1">Surat Sekertaris Daerah</p>
+                                    {{-- <p class="h6 text-muted mb-0 mb-lg-0">Seluruh Surat Disalurkan Ke Gubernur
+                                        Melalui Sekertaris Daerah</p> --}}
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="timeline-content" data-toggle="popover" data-trigger="hover"
+                                    data-placement="top" title=""
+                                    data-content="And here's some amazing content. It's very engaging. Right?"
+                                    data-original-title="2005">
+                                    <div class="inner-circle"></div>
+                                    <p class="h6 mt-3 mb-1">Surat Keluar</p>
+                                    {{-- <p class="h6 text-muted mb-0 mb-lg-0">Seluruh Surat yang Keluar dari ASisten
+                                        III Gubernur Provinsi Sumatera Selatan</p> --}}
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                {{-- Surat Tugas --}}
+                <div class="row text-center justify-content-center mb-5 mt-5">
+                    <div class="col-xl-6 col-lg-8">
+                        <h3 class="font-weight-bold">Alur Surat Tugas Masuk</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
+                            <div class="timeline-step">
+                                <div class="timeline-content" data-toggle="popover" data-trigger="hover"
+                                    data-placement="top" title=""
+                                    data-content="And here's some amazing content. It's very engaging. Right?"
+                                    data-original-title="2003">
+                                    <div class="inner-circle"></div>
+                                    <p class="h6 mt-3 mb-1">Surat Tugas</p>
+                                    {{-- <p class="h6 text-muted mb-0 mb-lg-0">Seluruh Surat Masuk Kecuali Surat tugas
+                                    </p> --}}
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="timeline-content" data-toggle="popover" data-trigger="hover"
+                                    data-placement="top" title=""
+                                    data-content="And here's some amazing content. It's very engaging. Right?"
+                                    data-original-title="2004">
+                                    <div class="inner-circle"></div>
+                                    <p class="h6 mt-3 mb-1">Surat Sekertaris Daerah</p>
+                                    {{-- <p class="h6 text-muted mb-0 mb-lg-0">Seluruh Surat Disalurkan Ke Gubernur
+                                        Melalui Sekertaris Daerah</p> --}}
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="timeline-content" data-toggle="popover" data-trigger="hover"
+                                    data-placement="top" title=""
+                                    data-content="And here's some amazing content. It's very engaging. Right?"
+                                    data-original-title="2005">
+                                    <div class="inner-circle"></div>
+                                    <p class="h6 mt-3 mb-1">Surat Keluar</p>
+                                    {{-- <p class="h6 text-muted mb-0 mb-lg-0">Seluruh Surat yang Keluar dari ASisten
+                                        III Gubernur Provinsi Sumatera Selatan</p> --}}
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
         </div>
 
 
