@@ -1,42 +1,26 @@
 @extends('layout.body') @section('container')
 
 <div class="container-fluid px-0">
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="assets/ampera.jpg" class="d-block w-100" alt="..." id="gambarC">
+
+    <div class="card text-bg-dark" style="border: 0;">
+        <img src="assets/gub.jpg" class="card-img  p-0" alt="..." style="width : 100%">
+        <div class="card-img-overlay mx-auto" style="color:white ;">
+            <div class="col-6 mx-auto mt-5">
+                <h1 class="card-title text-center pt-16">Pencatatan Surat Masuk dan Keluar Asisten III Bidang
+                    Administrasi dan Umum Provinsi Sumatera Selatan</h1>
             </div>
-            <div class="carousel-item">
-                <img src="assets/2.jpg" alt="..." id="gambarC">
+            <div class="col-6 mx-auto mt-5 text-center">
+                <img src="assets/Coat_of_arms_of_South_Sumatra.svg" alt="" style="width: 300px;">
             </div>
-            <div class="carousel-item">
-                <img src="assets/3.jpg" alt="..." id="gambarC">
-            </div>
+
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
 
 
     <div class="container">
-        <div class="row my-4 mx-auto">
-            <div class="d-flex justify-content-center text-center">
-                <h3 class="font-weight-bold">Pencatatan Surat Masuk dan Keluar Asisten III Bidang Administrasi dan Umum Provinsi Sumatera Selatan
-                </h3>
-            </div>
-        </div>
-
         <div class="alur-surat">
             <div class="container">
-                <div class="row text-center justify-content-center mb-5">
+                <div class="row text-center justify-content-center my-5">
                     <div class="col-xl-6 col-lg-8">
                         <h4 class="font-weight-bold">Alur Agenda Surat Masuk</h4>
                     </div>
