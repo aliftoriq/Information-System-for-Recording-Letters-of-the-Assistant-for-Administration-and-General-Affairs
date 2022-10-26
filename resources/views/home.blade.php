@@ -29,7 +29,7 @@
     <div class="container">
         <div class="row my-4 mx-auto">
             <div class="d-flex justify-content-center text-center">
-                <h3>Pencatatan Surat Masuk dan Keluar Asisten III Bidang Administrasi dan Umum Provinsi Sumatera Selatan
+                <h3 class="font-weight-bold">Pencatatan Surat Masuk dan Keluar Asisten III Bidang Administrasi dan Umum Provinsi Sumatera Selatan
                 </h3>
             </div>
         </div>
@@ -38,7 +38,7 @@
             <div class="container">
                 <div class="row text-center justify-content-center mb-5">
                     <div class="col-xl-6 col-lg-8">
-                        <h3 class="font-weight-bold">Alur Agenda Surat Masuk</h3>
+                        <h4 class="font-weight-bold">Alur Agenda Surat Masuk</h4>
                     </div>
                 </div>
 
@@ -87,7 +87,7 @@
                 {{-- Surat Tugas --}}
                 <div class="row text-center justify-content-center mb-5 mt-5">
                     <div class="col-xl-6 col-lg-8">
-                        <h3 class="font-weight-bold">Alur Surat Tugas Masuk</h3>
+                        <h4 class="font-weight-bold">Alur Surat Tugas Masuk</h4>
                     </div>
                 </div>
 
