@@ -3,7 +3,7 @@
 <div class="container-fluid px-0">
 
     <div class="card text-bg-dark" style="border: 0;">
-        <img src="assets/gub.jpg" class="card-img  p-0" alt="..." style="width : 100%">
+        <img src="assets/ampera.jpg" class="card-img  p-0" alt="..." style="width : 100%">
         <div class="card-img-overlay mx-auto" style="color:white ;">
             <div class="col-6 mx-auto mt-5">
                 <h1 class="card-title text-center pt-16">Pencatatan Surat Masuk dan Keluar Asisten III Bidang
