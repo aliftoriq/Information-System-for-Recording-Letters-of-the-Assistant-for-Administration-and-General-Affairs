@@ -11,11 +11,6 @@ use Illuminate\Http\Request;
 
 class SuratKeluarController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         return view('surat.suratKeluar', [
@@ -26,22 +21,11 @@ class SuratKeluarController extends Controller
         ]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         return redirect("/surat-keluar")->with('updated', 'Data Terupdate');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
         $surat = sekda::findOrFail($request->get('id'));

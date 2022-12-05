@@ -8,14 +8,8 @@ use Illuminate\Http\Request;
 
 class AgendaSuratMasukController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        // return surat::all();
         return view('surat.agendaSuratMasuk', [
             'surats' => surat::all(),
             'title' => 'Agenda Surat Masuk',
@@ -23,22 +17,10 @@ class AgendaSuratMasukController extends Controller
         ]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
-        //
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
         $validatedData = $request->validate([
@@ -47,7 +29,6 @@ class AgendaSuratMasukController extends Controller
             'no_surat' => 'required|unique:surats,no_surat',
             'instansi_id' => 'required',
             'hal' => 'required',
-            // 'jenis_surat' => 'required'
         ]);
 
         surat::create($validatedData);

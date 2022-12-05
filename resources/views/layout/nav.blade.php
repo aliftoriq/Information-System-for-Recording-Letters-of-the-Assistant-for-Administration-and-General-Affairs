@@ -13,9 +13,9 @@
                 <li class="nav-item">
                     <a class="nav-link @if($title == "Home") active @endif" aria-current="page" href="/">Home</a>
                 </li>
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a class="nav-link" href="/About">About</a>
-                </li>
+                </li> --}}
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle @if($title != "Home" && $title != "About") active @endif" href="#" id="navbarDropdownMenuLink" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
